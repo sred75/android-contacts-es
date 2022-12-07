@@ -13,7 +13,7 @@ public class BaseListDiffCallback<T extends ListDiffInterface<T> > extends ItemC
 
     @Override
     public boolean areContentsTheSame(@NonNull T oldItem, @NonNull T newItem) {
-        return oldItem.equals(newItem);
+        return oldItem.equals(newItem); //исправлено сравнение
     }
 
     @Nullable
